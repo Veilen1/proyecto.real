@@ -1,11 +1,12 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
     background-color: black;
-    height: 2000px;
+    height: 100vh;
     }
 .bodyimg{
     background-image: url(../assets/magstrimarchilogo.png);
@@ -81,7 +82,7 @@ header.abajo ul li a{
 .section1{
     grid-area: sect1;
     width: 100%;
-    height: 5rem;
+    height: 45vh;
 }
 
 .section2{
@@ -100,24 +101,31 @@ header.abajo ul li a{
 }
 .section3 {
     grid-area: sect3;
+    height: 300px;
+    background-color: rgb(16, 206, 117);
+    opacity: 0.97;
 }
+.section4 {
+    grid-area: sect4;
+    height: 300px;
+    background-color: rgb(23, 149, 158);
+    opacity: 0.97;
+}
+
 .sectionCenter {
     display: flex;
     justify-content: center;
 }
-.blanco{
-    grid-area: bl;
-}
 .gridMain {
     display: grid;
     width: 100%;
-    height: 100%;
     justify-items: stretch;
 grid-template-areas: 
 ". header ."
 ". sect1 ."
 ". sect2 ."
 ". sect3 ."
+". sect4 ."
 ;
 }
 
@@ -131,4 +139,8 @@ padding: 30px;
 
 main section div p {
     font-size: 20px;
+}
+.btnBio{
+    height: 50px;
+    margin-top: 25px;
 }
