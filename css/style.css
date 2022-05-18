@@ -126,7 +126,12 @@ grid-template-areas:
 ". sect2 ."
 ". sect3 ."
 ". sect4 ."
+". footer ."
 ;
+}
+.footer{
+    grid-area: footer;
+    
 }
 
 .divSection{
