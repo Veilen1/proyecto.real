@@ -101,7 +101,6 @@ header.abajo ul li a{
 }
 .section3 {
     grid-area: sect3;
-    height: 300px;
     background-color: rgb(16, 206, 117);
     opacity: 0.97;
 }
