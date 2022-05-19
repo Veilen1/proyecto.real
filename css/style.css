@@ -10,6 +10,7 @@ body {
     }
 .bodyimg{
     background-image: url(../assets/magstrimarchilogo.png);
+    background-color: black;
     background-size: 35rem;
     background-repeat: no-repeat;
     background-position: 50% 25vh;
