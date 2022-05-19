@@ -77,15 +77,15 @@ for (let libro of books) {
     const div = document.createElement("div")
 
     div.innerHTML = ` 
-<div class="card mb-3" style="max-width: 540px;">
+<div class="card mb-3" style="max-width: 1200px; min-width: 865px;">
 <div class="row g-0">
     <div class="col-md-4">
-        <img src="${libro.img}" class="img-fluid rounded-start" alt="${libro.nombre}.img">
+        <img src="${libro.img}" class="img-fluid rounded-start imgCards" alt="${libro.nombre}.img">
     </div>
     <div class="col-md-8">
         <div class="card-body">
             <h5 class="card-title h1">${libro.nombre}</h5>
-            <p class="card-text h3">${libro.genero}</p>
+            <p class="card-text h2">${libro.genero}</p>
             <p class="card-text h4">${libro.descrip}</p>
             <p class="card-text h5"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
@@ -96,3 +96,8 @@ for (let libro of books) {
     contenedor.append(div)
 
 }
+
+const eventoNav = document.getElementById("eventoNav");
+eventoNav.addEventListener ("scroll", () => {
+
+})
