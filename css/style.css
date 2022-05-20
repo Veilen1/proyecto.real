@@ -25,22 +25,14 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    transition: 0.7s;
+    transition: 1s;
     padding: 30px 20px;
     z-index: 10;
+    align-items: center;
 }
-header.abajo{
-    background: white;
+header .abajo{
+background-color: white;
     padding: 15px 20px;
-}
-header .logo{
-    position: relative;
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
-    letter-spacing: 2px;
-    transition: 1.5s;
-    text-decoration: none;
 }
 nav{
     display: flex;
@@ -71,7 +63,6 @@ header ul li a{
     transition: 0.7s;
 }
 
-header.abajo .logo,
 header.abajo ul li a{
     color: black;
 }
@@ -111,7 +102,6 @@ header.abajo ul li a{
 }
 .section4 {
     grid-area: sect4;
-    height: 300px;
     background-color: rgb(23, 149, 158);
     opacity: 0.97;
 }
@@ -160,4 +150,30 @@ main section div p {
 .iconFooter{
 max-width: 40px;
 max-height: 40px;
+}
+.animado{
+    opacity: 0;
+    transform: all 0.5;
+}
+
+.abajo{
+    padding: 10px 0px;
+    align-items: center;
+    background-color: rgb(182, 182, 182);
+    border-color: white;
+    border-radius: 25%;
+    border-width: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    opacity: 0.95;
+}
+.abajo nav ul li a {
+    font-weight: bold;
+}
+.tituloCard{
+    font-size: 50px;
+}
+.card-body{
+    text-align: center;
+    align-items: center;
 }
