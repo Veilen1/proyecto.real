@@ -110,19 +110,7 @@ header.abajo ul li a{
     display: flex;
     justify-content: center;
 }
-.gridMain {
-    display: grid;
-    width: 100%;
-    justify-items: stretch;
-grid-template-areas: 
-". header ."
-". sect1 ."
-". sect2 ."
-". sect3 ."
-". sect4 ."
-". footer ."
-;
-}
+
 .footer{
     grid-area: footer;
     width: 100% ;
