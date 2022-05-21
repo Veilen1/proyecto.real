@@ -54,13 +54,14 @@ header ul li{
 
 header ul li a{
     position: relative;
-    font-family: helvetica;
     margin: 0 15px;
     text-decoration: none;
     color: #fff;
     letter-spacing: 2px;
-    font-weight: 600;
+    font-weight: 300;
     transition: 0.7s;
+    font-family: AltonaSans;
+    font-size: 20px;
 }
 
 header.abajo ul li a{
@@ -78,8 +79,7 @@ header.abajo ul li a{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 350px;
-    background-color: rgb(137, 11, 55);
+    background-color: rgb(0 51 68);
     opacity: 0.89;
     text-align: center;
     color: white;
@@ -90,9 +90,10 @@ header.abajo ul li a{
 }
 
 .textBio{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: AltonaSans;
     color: white;
     padding: 7px;
+    font-size: 24px;
 }
 
 .section3 {
@@ -102,7 +103,6 @@ header.abajo ul li a{
 }
 .section4 {
     grid-area: sect4;
-    background-color: rgb(23, 149, 158);
     opacity: 0.97;
 }
 
@@ -124,8 +124,7 @@ grid-template-areas:
 ;
 }
 .footer{
-    grid-area: footer;
-    width: 100%;
+    width: auto;
 }
 
 .divSection{
@@ -139,9 +138,23 @@ padding: 30px;
 main section div p {
     font-size: 20px;
 }
-.btnBio{
+.btnBio {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    width: 150px;
     height: 50px;
     margin-top: 25px;
+    background-color: rgb(10 77 67);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: 0.35s;
+}
+.btnBio:hover{
+    color:black;
+    background-color: rgb(137 11 55);
 }
 .imgCards{
     width: 333px;
@@ -176,4 +189,29 @@ max-height: 40px;
 .card-body{
     text-align: center;
     align-items: center;
+}
+
+@font-face {
+    font-family: AltonaSans;
+    src: url(../assets/AltonaSans-Regular.ttf);
+}
+@font-face {
+    font-family: KidDos;
+    src: url(../assets/KIdDOS-Regular.ttf);
+}
+.letraAltona{
+    font-family: AltonaSans;
+}
+.letraKid{
+font-family: KidDos;
+}
+.card-bio{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0 51 68);
+    align-items: center;
+    opacity: 0.97;
+    color: white;
+    border-radius: 15px;
+    width: 90%;
 }
