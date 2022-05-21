@@ -124,7 +124,8 @@ grid-template-areas:
 ;
 }
 .footer{
-    width: auto;
+    grid-area: footer;
+    width: 100% ;
 }
 
 .divSection{
@@ -214,4 +215,10 @@ font-family: KidDos;
     color: white;
     border-radius: 15px;
     width: 90%;
+}
+
+@media (max-width: 766px) {
+    footer {
+        width: 100vh;
+    }
 }
